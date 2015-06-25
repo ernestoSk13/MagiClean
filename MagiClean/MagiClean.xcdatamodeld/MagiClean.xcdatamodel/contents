@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D72i" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Categorias" representedClassName="Categorias" syncable="YES">
+        <attribute name="idCategoria" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagenCategoria" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreCategoria" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Cliente" representedClassName="Cliente" syncable="YES">
+        <attribute name="apellidoCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calleNumero" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="correoCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccionCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefonoCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="clientePedido" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pedido" inverseName="pedidoCliente" inverseEntity="Pedido" syncable="YES"/>
+    </entity>
+    <entity name="Pedido" representedClassName="Pedido" syncable="YES">
+        <attribute name="cantidadPedido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaPedido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPedido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precioTotal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pedidoCliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="clientePedido" inverseEntity="Cliente" syncable="YES"/>
+        <relationship name="productoPedido" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Producto" syncable="YES"/>
+    </entity>
+    <entity name="Producto" representedClassName="Producto" syncable="YES">
+        <attribute name="cantidadDisponible" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codigoBarras" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagenProducto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreProducto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notasProducto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precioCompra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precioVenta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productoID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="proveedorProducto" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productoCategoria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categorias" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categorias" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Cliente" positionX="-54" positionY="81" width="128" height="165"/>
+        <element name="Pedido" positionX="-45" positionY="90" width="128" height="165"/>
+        <element name="Producto" positionX="-63" positionY="9" width="128" height="195"/>
+    </elements>
+</model>

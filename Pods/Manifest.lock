@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - APNumberPad (1.1.2)
+  - DropdownMenu (1.0.0)
+  - GoogleMaps (1.10.1)
+  - MTBBarcodeScanner (1.6.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - APNumberPad (~> 1.0)
+  - DropdownMenu
+  - GoogleMaps
+  - MTBBarcodeScanner
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  APNumberPad: 705e9e1a38df66e71b12d6628a6229a9a2ddb5c5
+  DropdownMenu: 5777e17ac6ddbc69b151719b83a838da81440786
+  GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
+  MTBBarcodeScanner: beda75d4c1e2750405f62ee53f7a7ee40bf6825b
+
+COCOAPODS: 0.37.2

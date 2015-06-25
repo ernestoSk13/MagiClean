@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDatePickerViewController">
+            <connections>
+                <outlet property="fadeView" destination="cE2-ue-rrw" id="RRI-6I-o2o"/>
+                <outlet property="flexSpace" destination="35I-Of-jFU" id="FDv-ZE-HMQ"/>
+                <outlet property="pickerView" destination="hs6-2D-JT4" id="dkT-uQ-KoH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000596046398" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-ue-rrw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <variation key="widthClass=compact" ambiguous="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    </variation>
+                </view>
+                <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-2D-JT4">
+                    <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <date key="date" timeIntervalSinceReferenceDate="447221123.68476498">
+                        <!--2015-03-05 04:05:23 +0000-->
+                    </date>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="0.0" y="586" width="400" height="214"/>
+                    </variation>
+                </datePicker>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUG-05-QjT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <barButtonItem title="Cancel" id="AwH-iy-j6M">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="-1" id="39E-25-K6y"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="35I-Of-jFU"/>
+                        <barButtonItem title="Done" id="bF5-jk-9Bb">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="-1" id="Fvh-dE-G13"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="0.0" y="542" width="400" height="44"/>
+                    </variation>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0qr-FA-5qy"/>
+                <constraint firstAttribute="bottom" secondItem="hs6-2D-JT4" secondAttribute="bottom" id="2Nl-19-oiG"/>
+                <constraint firstAttribute="bottom" secondItem="hs6-2D-JT4" secondAttribute="bottom" id="2cl-rq-3gm"/>
+                <constraint firstAttribute="trailing" secondItem="MUG-05-QjT" secondAttribute="trailing" id="2n5-nn-eY7"/>
+                <constraint firstItem="MUG-05-QjT" firstAttribute="leading" secondItem="hs6-2D-JT4" secondAttribute="leading" id="5Ya-9B-Z50"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="trailing" secondItem="MUG-05-QjT" secondAttribute="trailing" id="AR5-Pl-svU"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="top" secondItem="MUG-05-QjT" secondAttribute="bottom" id="Azl-Hk-Byy"/>
+                <constraint firstItem="cE2-ue-rrw" firstAttribute="leading" secondItem="MUG-05-QjT" secondAttribute="leading" id="EpH-5y-x5G"/>
+                <constraint firstItem="MUG-05-QjT" firstAttribute="trailing" secondItem="cE2-ue-rrw" secondAttribute="trailing" id="KaJ-rw-xWa"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="top" secondItem="MUG-05-QjT" secondAttribute="bottom" id="OBo-uI-8iY"/>
+                <constraint firstAttribute="trailing" secondItem="hs6-2D-JT4" secondAttribute="trailing" id="SFe-kG-YBs"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VAa-iH-5vO"/>
+                <constraint firstAttribute="trailing" secondItem="cE2-ue-rrw" secondAttribute="trailing" constant="800" id="ViH-N5-U2A"/>
+                <constraint firstAttribute="bottom" secondItem="hs6-2D-JT4" secondAttribute="bottom" id="eDh-2Y-tYB"/>
+                <constraint firstItem="cE2-ue-rrw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fge-iu-Aeo"/>
+                <constraint firstAttribute="trailing" secondItem="cE2-ue-rrw" secondAttribute="trailing" id="kJ9-4e-DM1"/>
+                <constraint firstAttribute="trailing" secondItem="hs6-2D-JT4" secondAttribute="trailing" id="lef-d6-mwg"/>
+                <constraint firstAttribute="trailing" secondItem="hs6-2D-JT4" secondAttribute="trailing" id="m4k-re-ol1"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mbE-Jv-q9e"/>
+                <constraint firstAttribute="bottom" secondItem="cE2-ue-rrw" secondAttribute="bottom" id="ni7-IK-qA5"/>
+                <constraint firstAttribute="bottom" secondItem="cE2-ue-rrw" secondAttribute="bottom" constant="800" id="oae-83-Bfn"/>
+                <constraint firstItem="cE2-ue-rrw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pSm-OM-8Br"/>
+                <constraint firstItem="cE2-ue-rrw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t5C-vZ-TI5"/>
+                <constraint firstItem="MUG-05-QjT" firstAttribute="leading" secondItem="cE2-ue-rrw" secondAttribute="leading" id="tKC-8x-uIR"/>
+                <constraint firstAttribute="bottom" secondItem="hs6-2D-JT4" secondAttribute="bottom" id="wIW-0x-kLM"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="EpH-5y-x5G"/>
+                    <exclude reference="ViH-N5-U2A"/>
+                    <exclude reference="fge-iu-Aeo"/>
+                    <exclude reference="kJ9-4e-DM1"/>
+                    <exclude reference="ni7-IK-qA5"/>
+                    <exclude reference="oae-83-Bfn"/>
+                    <exclude reference="pSm-OM-8Br"/>
+                    <exclude reference="t5C-vZ-TI5"/>
+                    <exclude reference="2n5-nn-eY7"/>
+                    <exclude reference="5Ya-9B-Z50"/>
+                    <exclude reference="KaJ-rw-xWa"/>
+                    <exclude reference="tKC-8x-uIR"/>
+                    <exclude reference="0qr-FA-5qy"/>
+                    <exclude reference="2Nl-19-oiG"/>
+                    <exclude reference="2cl-rq-3gm"/>
+                    <exclude reference="AR5-Pl-svU"/>
+                    <exclude reference="Azl-Hk-Byy"/>
+                    <exclude reference="OBo-uI-8iY"/>
+                    <exclude reference="SFe-kG-YBs"/>
+                    <exclude reference="VAa-iH-5vO"/>
+                    <exclude reference="eDh-2Y-tYB"/>
+                    <exclude reference="lef-d6-mwg"/>
+                    <exclude reference="m4k-re-ol1"/>
+                    <exclude reference="mbE-Jv-q9e"/>
+                    <exclude reference="wIW-0x-kLM"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="cE2-ue-rrw"/>
+                    <include reference="hs6-2D-JT4"/>
+                    <include reference="MUG-05-QjT"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="EpH-5y-x5G"/>
+                    <include reference="kJ9-4e-DM1"/>
+                    <include reference="ni7-IK-qA5"/>
+                    <include reference="pSm-OM-8Br"/>
+                    <include reference="t5C-vZ-TI5"/>
+                    <include reference="KaJ-rw-xWa"/>
+                    <include reference="0qr-FA-5qy"/>
+                    <include reference="2Nl-19-oiG"/>
+                    <include reference="Azl-Hk-Byy"/>
+                    <include reference="SFe-kG-YBs"/>
+                    <include reference="lef-d6-mwg"/>
+                    <include reference="mbE-Jv-q9e"/>
+                    <include reference="wIW-0x-kLM"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="ViH-N5-U2A"/>
+                    <include reference="fge-iu-Aeo"/>
+                    <include reference="oae-83-Bfn"/>
+                    <include reference="2n5-nn-eY7"/>
+                    <include reference="5Ya-9B-Z50"/>
+                    <include reference="tKC-8x-uIR"/>
+                    <include reference="2cl-rq-3gm"/>
+                    <include reference="AR5-Pl-svU"/>
+                    <include reference="OBo-uI-8iY"/>
+                    <include reference="VAa-iH-5vO"/>
+                    <include reference="eDh-2Y-tYB"/>
+                    <include reference="m4k-re-ol1"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="305" y="274"/>
+        </view>
+    </objects>
+</document>
